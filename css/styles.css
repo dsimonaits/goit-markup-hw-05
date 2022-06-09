@@ -102,6 +102,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav-link.active {
@@ -136,6 +138,8 @@ img {
   letter-spacing: 0.02em;
   list-style: none;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav-icon {
@@ -198,6 +202,8 @@ img {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
@@ -219,6 +225,10 @@ img {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:hover,
@@ -227,7 +237,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .filter-button.active {
@@ -393,6 +402,8 @@ img {
   background-color: var(--white-color);
 
   fill: var(--icons-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links {
@@ -406,9 +417,16 @@ img {
 .social-links_social-items:hover,
 .social-links_social-items:focus {
   background-color: var(--accent-color);
-  fill: var(--white-color);
 }
 
+.social-links_social-items .icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links_social-items:hover .icon,
+.social-links_social-items:focus .icon {
+  fill: var(--white-color);
+}
 /* Clients */
 
 .clients-list {
@@ -430,11 +448,21 @@ img {
   border-radius: 4px;
 
   fill: var(--icons-color);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent-color);
+}
+
+.clients-link .icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-link:hover .icon,
+.clients-link:focus .icon {
   fill: var(--accent-color);
 }
 
@@ -489,6 +517,8 @@ img {
   font-size: 16px;
   line-height: 1.88;
   text-decoration: none;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-link:hover,
@@ -560,6 +590,8 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-address .footer-link:hover,
@@ -569,6 +601,8 @@ img {
 
 .item-address .footer-link.address {
   color: var(--white-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-address .footer-link.address:hover,
@@ -616,6 +650,8 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 
   fill: var(--white-color);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .connect-links .links-item:not(:last-child) {
@@ -625,5 +661,4 @@ img {
 .connect-links_social-items:hover,
 .connect-links_social-items:focus {
   background-color: var(--accent-color);
-  fill: var(--white-color);
 }
