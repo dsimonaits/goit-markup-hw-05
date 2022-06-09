@@ -376,6 +376,29 @@ img {
   margin-right: 30px;
 }
 
+.work-item-wrapper {
+  position: relative;
+}
+
+.work-text {
+  display: block;
+  position: absolute;
+  transform: translatey(-100%);
+
+  width: 100%;
+  padding: 27px 82px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--white-color);
+}
+
 /* TEAM */
 
 .ourteam-section {
